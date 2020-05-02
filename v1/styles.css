@@ -23,8 +23,7 @@ header{
 nav > ul > li {
     padding-top: 0px;
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 5px;
     overflow: hidden;
     display:inline-block;
     /*M2LO15*/
