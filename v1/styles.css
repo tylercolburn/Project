@@ -23,7 +23,7 @@ header{
 nav > ul > li {
     padding-top: 0px;
     list-style-type: none;
-    padding: 5px;
+    padding: 0px;
     overflow: hidden;
     display:inline-block;
     /*M2LO15*/
@@ -62,6 +62,7 @@ li:last-child{
 /*M2LO11 */
 li a:hover{
     /*M2LO15*/
+    color: hsla(0, 0%, 100%, 0.7);
     background-color: black;
 }
 /*M2LO7*/
