@@ -1,15 +1,10 @@
 @charset "utf-8";
 /*
-   V1
+   V2
    Author: Tyler Colburn 
-   Date: 5.2.20
+   Date: 5.14.20
    */
-/* M2LO12 */
-/*M2LO14 This isn't really the best example/use of this as they
-are both the same color but if you were on a older system
-the top one would work instead of the bottom possibly so then
-it makes your website backwords compatable/progressive
-enchancement */
+   /*M3LO1*/
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -53,7 +48,6 @@ q:before, q:after {
     content:'';
     content:none;
 }
-
 a {
     margin:0;
     padding:0;
@@ -61,15 +55,12 @@ a {
     vertical-align:baseline;
     background:transparent;
 }
-
-/* change colours to suit your needs */
 ins {
     background-color:#ff9;
     color:#000;
     text-decoration:none;
 }
 
-/* change colours to suit your needs */
 mark {
     background-color:#ff9;
     color:#000;
@@ -90,8 +81,6 @@ table {
     border-collapse:collapse;
     border-spacing:0;
 }
-
-/* change border colour to suit your needs */
 hr {
     display:block;
     height:1px;
@@ -112,37 +101,42 @@ html{
 header{
     padding-bottom: 0px;
 }
+/*M4LO5 Demonstrate the use of text or box shadowing 
+(CSS, note one of these two in your CSS and explain its impact on the HTML)*/
 h1{
-    font-size: 150px;
+    text-shadow: 2px 2px #ff0000;
+    font-size: 75px;
+    text-align: center;
 }
-/*M2LO12*/
-/*M2LO5 Demonstrate contextual selectors (CSS, specify 2 times, showing two different types
- of contextual selectors as shown in Figure 2-12, Contextual Selectors, of the textbook)*/
 nav > ul > li {
     list-style-type: none;
     display: inline-block;
-    /*M2LO15*/
     background-color: #333333;
     border-right: .5px solid #bbbbbb;
 } 
+/*M3LO2 Demonstrate floating elements 
+(CSS, note where you have specified a floating element and what its impact is)*/
 nav.horizontal li{
     margin-top: 5px;
     display: block;
     float: left;
     width: 12.50%;
   }
-/* Need help with centering the image and keeping quality */
-/*M2LO6 class selector*/
 .center{
     display:block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-/*M2LO6 id selector*/
 #footer1{
     text-align: center;
 }
+/*M3LO8A Demonstrate absolute 
+positioning (CSS, note use in your CSS and describe what its impact is on the HTML)*/
+/*M3LO3 Demonstrate a clearing floats 
+(CSS, note where you have used a clear and what its impact is)   
+M3LO11 Demonstrate -prefix- style browser extensions use in CSS 
+(CSS note the use in your CSS and what the purpose is) -- cant figure out what this is exactly*/
 footer{
     width: 100%;
     height: 80px;
@@ -153,39 +147,72 @@ footer{
     padding-top: 30px;
     clear: both;
 }
-/*M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, 
-once where precedence is applied and once where
- inheritance is applied; see 2-3d Style Specificity and Precedence,
-  and 2-3e Style Inheritance)  */
 li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
-    /*M2LO15*/
     color: white;
-    text-decoration: none; /* takes away underline/hyperlink atribute from showing*/
+    text-decoration: none;
 }
-/*M2LO11 */
 li:last-child{
     border-right: none;
 }
-/*M2LO11 */
 li a:hover{
-    /*M2LO15*/
     color: hsla(0, 0%, 100%, 0.7);
     background-color: black;
 }
-/*M2LO7*/
 a[href]{
-    /*M2LO15*/
     color: rgb(52, 98, 250);
 }
 body{
     display: flex;
     flex-direction: column;
 }
-body > div > p{
+body > div > section > p{
     font-size: 130%;
     line-height: 1.25;
     width: 40%;
 }
+img.resize {
+    max-width:50%;
+    max-height:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*M3LO6 Demonstrate formatting a grid (CSS, note the CSS rules that do this and 
+  what their impact is on the HTML; this can be old div-class based grids, or new CSS3 grids) kinda?*/
+  section#left {
+    float: left;
+    width: 46%;
+    margin-right: 2%;
+    margin-left: 2%;
+ }
+ section#right {
+    float: left;
+    width: 46%;
+    padding-bottom: 20px;
+ }
+ /*M4LO3 Demonstrate the use of rounded corners for borders (CSS) not working as expected*/
+ /*M4LO4 Demonstrate the use of gradients (CSS) can't figure out where i would even need this really*/
+ figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: 10%;
+    border-radius: 35px;
+  } 
+  figcaption {
+    border-radius: 35px;
+    background-color: #333333;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+  /*Not really useful for me but this is how it works
+  M4LO8 Demonstrate the use of transformations for 2D or 3D images 
+  (CSS, note one of these two in your CSS and explain its impact on the HTML)*/
+    img{
+        border-radius: 35px;
+        opacity: 0.75;
+    }
