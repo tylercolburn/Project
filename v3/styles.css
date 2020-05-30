@@ -277,8 +277,15 @@ img.resize {
       .dropdown:hover .dropbtn {
           background-color: black;
         }
+        /* M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use 
+        flexboxes; explain their impact on the page's layout; this can be a new page or a 
+        redo of an existing page)
+        M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what flexbox container 
+        properties you use and their impacts, for one CSS selector using them) */
+
         /* Didn't work the way I intended need to get it so one side can be flex and the other can too
         but not carry the right pictures to the left*/
+        
         /* .flex-container {
             display: flex;
             flex-direction: column;
