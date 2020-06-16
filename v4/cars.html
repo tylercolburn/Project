@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+   V4
+   Author: Tyler Colburn 
+   Date: 6.15.20
+   -->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Car Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <header>
+        <br><img class="resize" src="kitsap_car_meets_meet.jpg" alt="Kitsap Car Meets">
+        <nav class="horizontal">
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a style="color: rgb(15, 224, 15);" href="cars.html">Cars</a></li>
+                <li><a href="https://www.facebook.com/KitsapCarMeets">MarketPlace</a></li>
+                <li><a href="https://www.facebook.com/groups/614783012413006/">Facebook</a></li>
+                <li><a href="calender.html">Events</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav><br>
+    </header>
+    <body>
+
+        <h1>Builds and Owners</h1>
+        <div class="flex-container">
+            <div>
+                <section id="left">
+                    <figure>
+                        <img src="austin_green.jpg" alt="Austin Green" style="width: 100%;">
+                        <figcaption>Austin Green's 370z</figcaption>
+                    </figure>
+                </section>
+            </div>
+            <div>
+                <section id="right">
+                    <figure>
+                        <img src="Andrew_Prosser.jpg" alt="Andrew Prosser" style="width: 100%;">
+                        <figcaption>Andrew's FBO GTR </figcaption>
+                    </figure>
+                </section>     
+            </div>
+        </div>
+        <!-- Note form doesnt submit to any other page like a php due to no point if
+             I dont code it to add to the page -->
+             <!-- M7LO5 Demonstrate the use of a text box in a form
+             M7LO6 Demonstrate the use of check boxes in a form
+             M7LO7 Demonstrate the use of radio buttons in a form -->
+             <!-- Disgn of the radio buttons are suppose to look like shift lights but kinda weird -->
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="Name"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="LastName"><br><br>
+            <label for="CarModel">Model</label><br>
+            <input type="text" name="CarModel" value="Model/Make"><br>
+            <label for="pic">Supply Picture?</label>
+            <input type="checkbox" name="pic"><br>
+            <label for="Engine">H4</label><br>
+            <label for="Engine">4</label><br>
+            <label for="Engine">V6</label><br>
+            <label for="Engine">H6</label><br>
+            <label for="Engine">V8</label><br>
+            <input type="radio" id="H4" name="Engine"><br>
+            <input type="radio" id="4" name="Engine"><br>
+            <input type="radio" id="V6" name="Engine"><br>
+            <input type="radio" id="H6" name="Engine"><br>
+            <input type="radio" id="V8" name="Engine"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+    </html>
